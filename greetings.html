@@ -40,8 +40,8 @@ body{
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth()+1) +'/'+today.getFullYear()  ;
-
+    var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth()+1) +'/'+today.getFullYear()  +"\n"+ today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    
     var greet;
 
     if (hrs < 12)
